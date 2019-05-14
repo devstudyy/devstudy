@@ -1,3 +1,3 @@
 # dev study
 
-https://github.com/devstudyy/devstudy.git
+https://devstudyy.github.io/devstudy
