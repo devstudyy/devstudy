@@ -21,10 +21,11 @@ module.exports = {
         ],
         sidebar: {
             '/yukyung/': [{
-                title: 'YUKYUNG',
+                title: 'DOCUMENT',
                 collapsable: true,
                 children: [
-                    'one'
+                    'vuepress',
+                    'markdown'
                 ]
             }]
         }
