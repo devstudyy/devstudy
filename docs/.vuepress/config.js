@@ -17,6 +17,10 @@ module.exports = {
             {
                 text: '김유경',
                 link: '/yukyung/'
+            },
+            {
+                text: '황주리',
+                link: '/jju/'
             }
         ],
         sidebar: {
@@ -26,6 +30,13 @@ module.exports = {
                 children: [
                     'vuepress',
                     'markdown'
+                ]
+            }],
+            '/jju/': [{
+                title: 'DOCUMENT',
+                collapsable: true,
+                children: [
+                    'python'
                 ]
             }]
         }
