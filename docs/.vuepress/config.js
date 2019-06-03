@@ -11,17 +11,21 @@ module.exports = {
         search: true,
         sidebarDepth: 3,
         nav: [{
-                text: 'Home',
-                link: '/'
-            },
-            {
-                text: '김유경',
-                link: '/yukyung/'
-            },
-            {
-                text: '황주리',
-                link: '/jju/'
-            }
+            text: 'Home',
+            link: '/'
+        },
+        {
+            text: '김유경',
+            link: '/yukyung/'
+        },
+        {
+            text: '황주리',
+            link: '/jju/'
+        },
+        {
+            text: '마성민',
+            link: '/ma/'
+        }
         ],
         sidebar: {
             '/yukyung/': [{
@@ -37,6 +41,13 @@ module.exports = {
                 collapsable: true,
                 children: [
                     'python'
+                ]
+            }],
+            '/ma/': [{
+                title: 'DOCUMENT',
+                collapsable: true,
+                children: [
+                    'JS-Handlebars', 'JS-Template'
                 ]
             }]
         }
