@@ -25,6 +25,10 @@ module.exports = {
         {
             text: '마성민',
             link: '/ma/'
+        },
+        {
+            text: '백승빈',
+            link: '/been/'
         }
         ],
         sidebar: {
@@ -48,6 +52,13 @@ module.exports = {
                 collapsable: true,
                 children: [
                     'JS-Handlebars', 'JS-Template'
+                ]
+            }],
+            '/been/': [{
+                title: 'DOCUMENT',
+                collapsable: true,
+                children: [
+                    'meteor'
                 ]
             }]
         }
