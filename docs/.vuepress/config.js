@@ -29,7 +29,11 @@ module.exports = {
         {
             text: '백승빈',
             link: '/been/'
-        }
+        },
+            {
+                text: '최승원',
+                link: '/swchoi/'
+            }
         ],
         sidebar: {
             '/yukyung/': [{
@@ -59,6 +63,13 @@ module.exports = {
                 collapsable: true,
                 children: [
                     'meteor'
+                ]
+            }],
+            '/swchoi/': [{
+                title: 'DOCUMENT',
+                collapsable: true,
+                children: [
+                    'SpringBatch'
                 ]
             }]
         }
