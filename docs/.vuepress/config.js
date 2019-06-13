@@ -34,6 +34,10 @@ module.exports = {
                 text: '최승원',
                 link: '/swchoi/'
             }
+        ,{
+            text: '윤종원',
+            link: '/jjong/'
+        }
         ],
         sidebar: {
             '/yukyung/': [{
@@ -71,6 +75,10 @@ module.exports = {
                 children: [
                     'SpringBatch'
                 ]
+            }],
+            '/jjong/': [{
+                title: 'DOCUMENT',
+                collapsable: true,
             }]
         }
     },
