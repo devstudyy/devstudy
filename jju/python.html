@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>파이썬이란 ? | Dev Study</title>
+    <meta name="description" content="dev study blog">
+    
+    
+    <link rel="preload" href="/devstudy/assets/css/0.styles.dac03a01.css" as="style"><link rel="preload" href="/devstudy/assets/js/app.fccfb1f1.js" as="script"><link rel="preload" href="/devstudy/assets/js/9.c91781b1.js" as="script"><link rel="prefetch" href="/devstudy/assets/js/10.dff57a07.js"><link rel="prefetch" href="/devstudy/assets/js/11.90cabe7e.js"><link rel="prefetch" href="/devstudy/assets/js/12.653a6f0a.js"><link rel="prefetch" href="/devstudy/assets/js/13.fae6c5f0.js"><link rel="prefetch" href="/devstudy/assets/js/14.71ac308a.js"><link rel="prefetch" href="/devstudy/assets/js/15.7f7d81ac.js"><link rel="prefetch" href="/devstudy/assets/js/16.def2a4fd.js"><link rel="prefetch" href="/devstudy/assets/js/17.b0a5d87c.js"><link rel="prefetch" href="/devstudy/assets/js/18.a3edeaea.js"><link rel="prefetch" href="/devstudy/assets/js/19.398bb8dc.js"><link rel="prefetch" href="/devstudy/assets/js/2.a249846a.js"><link rel="prefetch" href="/devstudy/assets/js/20.0101abde.js"><link rel="prefetch" href="/devstudy/assets/js/21.2341ecc5.js"><link rel="prefetch" href="/devstudy/assets/js/22.1625976b.js"><link rel="prefetch" href="/devstudy/assets/js/23.1431ce35.js"><link rel="prefetch" href="/devstudy/assets/js/24.4223c62d.js"><link rel="prefetch" href="/devstudy/assets/js/25.7ec87ac8.js"><link rel="prefetch" href="/devstudy/assets/js/26.91dbf76a.js"><link rel="prefetch" href="/devstudy/assets/js/27.d7030d38.js"><link rel="prefetch" href="/devstudy/assets/js/28.c5968c26.js"><link rel="prefetch" href="/devstudy/assets/js/3.5c531c6a.js"><link rel="prefetch" href="/devstudy/assets/js/4.24fb08a8.js"><link rel="prefetch" href="/devstudy/assets/js/5.025a02dd.js"><link rel="prefetch" href="/devstudy/assets/js/6.cad38649.js"><link rel="prefetch" href="/devstudy/assets/js/7.8534a7d8.js"><link rel="prefetch" href="/devstudy/assets/js/8.5c82d821.js">
+    <link rel="stylesheet" href="/devstudy/assets/css/0.styles.dac03a01.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devstudy/" class="home-link router-link-active"><!----> <span class="site-name">Dev Study</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devstudy/" class="nav-link">Home</a></div><div class="nav-item"><a href="/devstudy/yukyung/" class="nav-link">김유경</a></div><div class="nav-item"><a href="/devstudy/jju/" class="nav-link router-link-active">황주리</a></div><div class="nav-item"><a href="/devstudy/ma/" class="nav-link">마성민</a></div><div class="nav-item"><a href="/devstudy/been/" class="nav-link">백승빈</a></div><div class="nav-item"><a href="/devstudy/swchoi/" class="nav-link">최승원</a></div><div class="nav-item"><a href="/devstudy/jjong/" class="nav-link">윤종원</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">강은지</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devstudy/oriri/javascript/" class="nav-link">JAVASCRIPT</a></li><li class="dropdown-item"><!----> <a href="/devstudy/oriri/java/" class="nav-link">JAVA</a></li></ul></div></div><div class="nav-item"><a href="/devstudy/rnmkr/" class="nav-link">박현우</a></div> <a href="https://github.com/devstudyy/devstudy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/devstudy/" class="nav-link">Home</a></div><div class="nav-item"><a href="/devstudy/yukyung/" class="nav-link">김유경</a></div><div class="nav-item"><a href="/devstudy/jju/" class="nav-link router-link-active">황주리</a></div><div class="nav-item"><a href="/devstudy/ma/" class="nav-link">마성민</a></div><div class="nav-item"><a href="/devstudy/been/" class="nav-link">백승빈</a></div><div class="nav-item"><a href="/devstudy/swchoi/" class="nav-link">최승원</a></div><div class="nav-item"><a href="/devstudy/jjong/" class="nav-link">윤종원</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">강은지</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devstudy/oriri/javascript/" class="nav-link">JAVASCRIPT</a></li><li class="dropdown-item"><!----> <a href="/devstudy/oriri/java/" class="nav-link">JAVA</a></li></ul></div></div><div class="nav-item"><a href="/devstudy/rnmkr/" class="nav-link">박현우</a></div> <a href="https://github.com/devstudyy/devstudy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>DOCUMENT</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/devstudy/jju/python.html" class="active sidebar-link">파이썬이란 ?</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#파이썬이란" class="sidebar-link">파이썬이란 ?</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#문법-주의사항" class="sidebar-link">문법 주의사항</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#출력" class="sidebar-link">출력</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#입력" class="sidebar-link">입력</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#숫자-numeric" class="sidebar-link">숫자 Numeric</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#문자열-string" class="sidebar-link">문자열 String</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#불린-boolean" class="sidebar-link">불린 Boolean</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#리스트-list" class="sidebar-link">리스트 List</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#튜플-tuple" class="sidebar-link">튜플 Tuple</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#형변환" class="sidebar-link">형변환</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#반복문" class="sidebar-link">반복문</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#연산자" class="sidebar-link">연산자</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#조건문" class="sidebar-link">조건문</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#딕셔너리-dictionary" class="sidebar-link">딕셔너리 Dictionary</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#함수" class="sidebar-link">함수</a></li><li class="sidebar-sub-header"><a href="/devstudy/jju/python.html#모듈" class="sidebar-link">모듈</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><blockquote><p>&quot;Life is short, You need Python&quot;</p></blockquote> <h2 id="파이썬이란"><a href="#파이썬이란" aria-hidden="true" class="header-anchor">#</a> 파이썬이란 ?</h2> <p>Python이란 1991년 귀도 반 로섬(Guido van Rossum)이 개발한 고급 프로그래밍 언어.</p> <p>프로그래머가 바로 사용할 수 있는 라이브러리들과 통합 환경을 제공하는 ‘Battery Included’ 개념을 기본으로 삼고 있다</p> <ul><li><strong>인터프리터 기반의 객체지향 언어</strong> <blockquote><p>파이썬 코드를 파이썬 바이트코드(bytecode)로 변환(컴파일) 후 해석(인터프리트) ; like JVM</p></blockquote></li> <li><strong>플랫폼에 구애받지 않는 언어</strong> <blockquote><p>컴파일된 바이트코드는 플랫폼에 구애받지 않아서 재 컴파일이 필요없다</p></blockquote></li> <li><strong>동적 타이핑 방식의 언어</strong> <blockquote><p>프로그램을 실행할 때 타입 검사를 수행(ex; 자바스트립트)
+(정적 타이핑 : 컴파일할 때 타입 검사(ex; c/c++))</p></blockquote></li> <li><strong>리플렉션을 지원하는 언어</strong> <blockquote><p>런타임 중 자신의 구조와 행위를 검사/수정할 수 있는 프로세스
+동적 객체 생성 및 함수 호출 등의 행위를 수행 가능함</p></blockquote></li> <li><strong>확장성이 뛰어난 언어</strong> <blockquote><p>외부 라이브러리로 쉽게 확장 가능
+컴파일된 모듈을 이용해 새로운 데이터 타입으로 이용 가능
+새로운 모듈은 대부분 플랫폼에서 새롭게 컴파일된 모듈을 파이썬 인터프리터 내부로 동적 로딩 가능</p></blockquote></li></ul> <p><strong>라이브러리</strong>
+배포판에 바로 사용할 수 있는 라이브러리와 통합 환경이 함께 제공.<br>
+os 시스템 호출, xml 처리, 직렬화, http, ftp 등 각종 프로토콜, 정규표현식, CSV 파일 처리, DB접속, GUI, html, 파이썬 코드 구문 북석 도구 등을 포함<br>
+패키지 관리는 <a href="https://pypi.org/" target="_blank" rel="noopener noreferrer">PyPI(python package index) - 파이썬 관련 패키지들이 모여있는 저장소<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 에서..<br> <br> <br></p> <h2 id="문법-주의사항"><a href="#문법-주의사항" aria-hidden="true" class="header-anchor">#</a> 문법 주의사항</h2> <p>파이썬은 <strong>들여쓰기를 이용한 블록 구조</strong>로 되어있다. <br></p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>def factorial(x):
+  if x == 0:
+      return 1
+  else:
+      return x \* factorial(x - 1)
+</code></pre></div></blockquote> <blockquote><p>괄호를 사용한 블록구조</p> <div class="language- extra-class"><pre class="language-text"><code>int factorial(int x) {
+if(x == 0) {
+return 1;
+} else {
+return x \* factorial(x - 1);
+}
+}
+</code></pre></div></blockquote> <h2 id="출력"><a href="#출력" aria-hidden="true" class="header-anchor">#</a> 출력</h2> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(&quot;hello&quot;)       # hello
+print(1)             # 1
+print(10/2)         # 5.0
+print(&quot;&quot;, 1+1)      #  2
+print(&quot;hello&quot;, 1)     # hello 1
+print(&quot;hello&quot;, &quot;1&quot;)  # hello 1
+print(&quot;&quot; + 1 + 1)  # error
+</code></pre></div></blockquote> <h2 id="입력"><a href="#입력" aria-hidden="true" class="header-anchor">#</a> 입력</h2> <blockquote><div class="language- extra-class"><pre class="language-text"><code>실행 중 사용자의 입력을 받는다
+입력 값은 항상 문자열로 받아 온다.
+프로그램에게 전달 가능
+변수에 저장 가능
+</code></pre></div></blockquote> <blockquote><div class="language- extra-class"><pre class="language-text"><code>input('hello python')
+</code></pre></div></blockquote> <h2 id="숫자-numeric"><a href="#숫자-numeric" aria-hidden="true" class="header-anchor">#</a> 숫자 Numeric</h2> <ul><li>정수, 실수</li> <li>연산 가능</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_int1 = 1
+my_int2 = -2
+my_int3 = 4096
+my_float1 = 1.0
+my_float2 = 2.0
+my_float3 = 3.14
+</code></pre></div></blockquote> <h2 id="문자열-string"><a href="#문자열-string" aria-hidden="true" class="header-anchor">#</a> 문자열 String</h2> <ul><li>큰 따옴표, 작은 따옴표로 구분</li> <li>리스트같은 시퀀스 자료형</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_str1 = 'a'
+my_str2 = '3.14'
+my_str3 = 'coding'
+my_str4 = &quot;coding&quot;
+</code></pre></div></blockquote> <ul><li>따옴표가 포함된 문자열을 사용하고 싶을 경우 서로 다른 따옴표를 함께 사용</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(&quot;Let's go!&quot;)
+print('I said, &quot;Hello!&quot;')
+</code></pre></div></blockquote> <ul><li>여러줄 표현 -&gt; 같은 따옴표를 세번씩 사용</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_str = &quot;&quot;&quot;버스
+            지하철
+            택시
+         &quot;&quot;&quot;
+</code></pre></div></blockquote> <h3 id="포맷팅"><a href="#포맷팅" aria-hidden="true" class="header-anchor">#</a> 포맷팅</h3> <blockquote><p>% 사용</p> <ul><li>% 연사자를 이용해 문자열에 숫자, 문자열 등을 대입</li> <li>%d : 정수형 숫자</li> <li>%f : 실수형 숫자</li> <li>%s : 문자열</li></ul> <div class="language- extra-class"><pre class="language-text"><code>print('My name is %s' % 'Tom')
+My name is Tom
+print('x = %d, y = %d' % (1, 2))
+x = 1, y = 2
+print('%d x %d = %d' % (2, 3, 2 * 3))
+2 x 3 = 6
+</code></pre></div></blockquote> <blockquote><p>{ } 사용</p> <ul><li>'{}'.format()</li> <li>포맷팅을 수행하는 문자열 메소드</li> <li>괄호 안에 숫자를 넣어 순서 지정 가능</li></ul> <div class="language- extra-class"><pre class="language-text"><code>print('My name is {}'.format('Tom'))
+My name is Tom
+print('{} x {} ={}'.format(2, 3, 2 * 3))
+2 x 3 = 6
+print('{1} x {0} ={2}'.format(2, 3, 2 * 3))  # 괄호 안의 숫자는 순서를 지정
+3 x 2 = 6
+</code></pre></div></blockquote> <h3 id="인덱싱"><a href="#인덱싱" aria-hidden="true" class="header-anchor">#</a> 인덱싱</h3> <blockquote><ul><li>index를 이용해 각 문자에 접근 (공백 포함, 음수 가능)</li> <li>음수를 사용할 경우 가장 뒤에서 거꾸로 셈</li></ul> <div class="language- extra-class"><pre class="language-text"><code>alphabet = 'abcde'
+print(alphabet[0])
+a
+print(alphabet[5])
+string index out of range error 발생, 없는 index
+print(alphabet[-1])
+e
+</code></pre></div></blockquote> <h3 id="슬라이싱"><a href="#슬라이싱" aria-hidden="true" class="header-anchor">#</a> 슬라이싱</h3> <blockquote><ul><li>: 콜론을 사용하여 여러값을 한 번에 잘라옴, [startIdx:endIdx]</li> <li>앞/뒤 숫자 생략 가능</li></ul> <div class="language- extra-class"><pre class="language-text"><code>my_str = 'Hello Python!'
+print(my_str[0:2])
+He
+print(my_str[3:7])
+lo P
+my_name = '김왼손의 왼손코딩'
+print(my_name[5:7])
+왼손
+my_name[:2]
+김왼
+my_name[7:]
+코딩
+</code></pre></div></blockquote> <h3 id="string-split-메서드"><a href="#string-split-메서드" aria-hidden="true" class="header-anchor">#</a> string.split() 메서드</h3> <blockquote><ul><li>공백 기준으로 분리</li></ul> <div class="language- extra-class"><pre class="language-text"><code>my_name = '김왼손의 왼손코딩'
+print(my_name.split())
+['김왼손의', '왼손코딩']
+splitNm = my_name.split()
+print(splitNm[0])
+김왼손의
+</code></pre></div></blockquote> <h3 id="독스트링-document-string"><a href="#독스트링-document-string" aria-hidden="true" class="header-anchor">#</a> 독스트링 (document String)</h3> <blockquote><ul><li>문서화 문자열(document string)</li> <li>함수주석</li> <li>보통 큰 따옴표 3개 사용</li></ul> <div class="language- extra-class"><pre class="language-text"><code>def 함수이름(인자1, ...):
+   &quot;&quot;&quot;함수에 대한 설명&quot;&quot;&quot;
+   실행할 명령1
+   실행할 명령2
+   ...
+   return 결과
+</code></pre></div></blockquote> <h3 id="end-print-end"><a href="#end-print-end" aria-hidden="true" class="header-anchor">#</a> end , print('', end='')</h3> <blockquote><ul><li>print() 함수에서 출력의 끝을 지정</li> <li>기본 값은 줄바꿈(\n), 개행문자가 아닌 다른 문자를 지정하고가 할 때 사용</li> <li>특정 기능을 수행하기 위해 미리 지정하여 사용</li></ul> <div class="language- extra-class"><pre class="language-text"><code>print(&quot;가&quot;)
+print(&quot;가&quot;, end=&quot;//&quot;)
+print(&quot;나&quot;)
+가
+가//나
+</code></pre></div></blockquote> <blockquote><ul><li>문서화 문자열(document string)</li> <li>함수주석</li> <li>보통 큰 따옴표 3개 사용</li></ul> <div class="language- extra-class"><pre class="language-text"><code>def 함수이름(인자1, ...):
+   &quot;&quot;&quot;함수에 대한 설명&quot;&quot;&quot;
+   실행할 명령1
+   실행할 명령2
+   ...
+   return 결과
+</code></pre></div></blockquote> <h2 id="불린-boolean"><a href="#불린-boolean" aria-hidden="true" class="header-anchor">#</a> 불린 Boolean</h2> <ul><li>논리 연산자 (T/F)</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_bool1 = True  # True
+my_bool2 = False  # False
+my_bool3 = 1 &lt; 2  # True
+my_bool4 = 1 == 2  # False
+</code></pre></div></blockquote> <h2 id="리스트-list"><a href="#리스트-list" aria-hidden="true" class="header-anchor">#</a> 리스트 List</h2> <ul><li>여러 값을 저장</li> <li>값의 변경이 가능하며, 순서가 있다.</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_list = []  # []
+my_list.append(123)  # [123]
+my_list.append('abc') # [123, 'abc']
+my_list.append(True)  # [123, 'abc', True]
+animals =['코알라', '하이에나', '바다소', '땅다람쥐', '바다코끼리', '스컹크', '아나콘다']
+print(animals[1:3])
+['하이에나', '바다소']
+del animals[2] #delete , sort, count 등 많이 있음
+print(animals[1:3])
+['하이에나', '땅다람쥐']
+</code></pre></div></blockquote> <h2 id="튜플-tuple"><a href="#튜플-tuple" aria-hidden="true" class="header-anchor">#</a> 튜플 Tuple</h2> <ul><li>여러 값을 저장</li> <li>값의 변경이 <strong>불가</strong>하며, 순서가 있다.</li> <li>괄호를 사용하지 않아도 된다</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_tuple1 = ()
+my_tuple2 = (1,)
+my_tuple3 = ('a', 'b', 'c')
+my_tuple4 = 3.14, 'Python', True
+</code></pre></div></blockquote> <h3 id="패킹-언패킹-packing-unpacking"><a href="#패킹-언패킹-packing-unpacking" aria-hidden="true" class="header-anchor">#</a> 패킹, 언패킹(packing, unpacking)</h3> <ul><li>패킹(packing) : 여러 값을 한 번에 묶는 것</li> <li>언패킹(unpacking) : 묶여 있는 값을 풀어 놓는 것</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>tp = 1,2,3
+tmp1 , tmp2 , tmp3= tp  # 선언되는 변수의 수와 튜플의 size는 같아야 한다, 안그럼 error 발생
+print(tmp1)
+1
+print(tmp2)
+2
+
+두 값을 서로 변경할 때도 사용
+num1 = 1
+num2 = 2
+num1, num2 = num2, num1
+print(num1, nul2)
+2 1
+</code></pre></div></blockquote> <h2 id="형변환"><a href="#형변환" aria-hidden="true" class="header-anchor">#</a> 형변환</h2> <ul><li>int()</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(int(3.14))
+3
+</code></pre></div></blockquote> <ul><li>float()</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(float(3))
+3.0
+</code></pre></div></blockquote> <ul><li>str()</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(str(3.0))
+3.0
+print(type(str(3.0)))
+&lt;class 'str'&gt;
+</code></pre></div></blockquote> <ul><li>list(string)</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>print(list('3.0'))
+['3','.','0']]
+</code></pre></div></blockquote> <h2 id="반복문"><a href="#반복문" aria-hidden="true" class="header-anchor">#</a> 반복문</h2> <ul><li>for : 횟 수 기준</li> <li>while : 조건 기준</li></ul> <h3 id="for"><a href="#for" aria-hidden="true" class="header-anchor">#</a> for</h3> <ul><li>문법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>- 코드블럭을 구분하기 위해 : 과 들여쓰기를 사용
+- 파이선에서 들여쓰기는 선택이 아닌 필수!
+
+for 변수 in 컨테이너:
+    실행할 명령1
+    실행할 명령2
+    ...
+</code></pre></div></blockquote> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_int1 = 1
+my_int2 = -2
+my_int3 = 4096
+my_float1 = 1.0
+my_float2 = 2.0
+my_float3 = 3.14
+</code></pre></div></blockquote> <ul><li>range() : for와 함께 자주 사용되는 내장 함수</li></ul> <blockquote><ul><li>range(stop)는 0부터 stop 전까지 숫자를 나열</li> <li>range(start, stop)는 start ~ stop 전 까지의 숫자를 나열</li></ul> <div class="language- extra-class"><pre class="language-text"><code>for n in range(3):
+    print(n)
+
+0
+1
+2
+
+for n in range(4, 6):
+    print(n)
+
+4
+5
+</code></pre></div></blockquote> <ul><li>for x 2 : for 중첩</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>for j in range(2, 10):
+    for i in range(1, 10):
+        print('{}x{}={}'.format(j, i, j \* i))
+</code></pre></div></blockquote> <ul><li>컴프리헨션 (comprehension) : 리스트를 만드는 강력하고 간결한 방법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = [number for number in numbers if number % 2 == 1]
+print(odd_numbers)
+</code></pre></div></blockquote> <h3 id="while"><a href="#while" aria-hidden="true" class="header-anchor">#</a> while</h3> <ul><li>문법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>while 조건:
+    실행할 문장 1
+    실행할 문장 2
+    ...
+</code></pre></div></blockquote> <blockquote><div class="language- extra-class"><pre class="language-text"><code>- continue : 다시 조건으로 돌아감
+- break : 반복문 종료
+
+count = 0
+while count &lt; 10:
+   count += 1
+   if count &lt; 4:
+       continue
+   if count == 8:
+       break
+</code></pre></div></blockquote> <h2 id="연산자"><a href="#연산자" aria-hidden="true" class="header-anchor">#</a> 연산자</h2> <h3 id="특수-연산자"><a href="#특수-연산자" aria-hidden="true" class="header-anchor">#</a> 특수 연산자</h3> <blockquote><p>print(3 ** 2) # 3의 2제곱
+print(4 ** 3) # 4의 3제곱
+print(7 // 3) # 7 나누기 3의 몫
+print(7 % 3) # 7 나누기 3의 나머지
+9<br>
+64<br>
+2<br>
+1</p></blockquote> <h3 id="문자열-연산자"><a href="#문자열-연산자" aria-hidden="true" class="header-anchor">#</a> 문자열 연산자</h3> <blockquote><div class="language- extra-class"><pre class="language-text"><code>- + : 연결
+- * : 반복
+
+print('김왼손'+ 'X' + '집단지성들')
+김왼손X집단지성들
+print('안녕 ' * 5)
+안녕 안녕 안녕 안녕 안녕
+</code></pre></div></blockquote> <h3 id="논리-연산자"><a href="#논리-연산자" aria-hidden="true" class="header-anchor">#</a> 논리 연산자</h3> <ul><li>and , or, not</li></ul> <h3 id="멤버쉽-연산자"><a href="#멤버쉽-연산자" aria-hidden="true" class="header-anchor">#</a> 멤버쉽 연산자</h3> <ul><li>리스트, 튜플 등 안에 값이 있는지 확인</li> <li>in, not in</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>fruits = ['사과', '딸기', '망고', '브로콜리', '바나나']
+print('딸기' in fruits)
+True
+print('딸기' not in fruits)
+False
+print('상추' in fruits)
+False
+print('상추' not in fruits)
+True
+</code></pre></div></blockquote> <h2 id="조건문"><a href="#조건문" aria-hidden="true" class="header-anchor">#</a> 조건문</h2> <ul><li>문법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>if 조건:
+   실행할 명령1
+   실행할 명령2
+elif 조건:
+   실행할 명령3
+   실행할 명령4
+else:
+   실행할 명령5
+   실행할 명령6
+
+
+name = 'Bob'
+if name == 'Alice':
+   print('당신이 Ailce이군요.')
+elif name == 'Bob':
+   print('당신이 Bob이군요.')
+else:
+   print('아니 당신은!?')
+
+당신이 Bob이군요.
+</code></pre></div></blockquote> <h2 id="딕셔너리-dictionary"><a href="#딕셔너리-dictionary" aria-hidden="true" class="header-anchor">#</a> 딕셔너리 Dictionary</h2> <ul><li>관련된 정보를 서로 연관시켜 놓은 것</li> <li>k, v로 이루어져 있다.</li> <li>리스트와의 차이첨은 관련된 정보를 연관시킨다는 것</li> <li>리스트는 값을 다루리 위해 인덱스를 사용, 딕셔너리는 키를 사용</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>my_dict = {}  # {}
+my_dict[1] = 'a'  # {1: 'a'}
+my_dict['b'] = 2  # {1: 'a', 'b': 2}
+my_dict['c'] = 'd'  # {1: 'a', 'b': 2, 'c': 'd'}
+</code></pre></div></blockquote> <ul><li>dict method</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>- dict.values() : 값만 뽑아서 리턴
+
+students = {'학생1': 'Tom', '학생2': 'Sally', '학생3': 'Betty'}
+print(students.values() , students.keys())
+
+dict_values(['Tom', 'Sally', 'Betty']) dict_keys(['학생1', '학생2', '학생3'])
+
+for key, val in students.items():
+    print(key, val)
+
+학생1 Tom
+학생2 Sally
+학생3 Betty
+
+</code></pre></div></blockquote> <h2 id="함수"><a href="#함수" aria-hidden="true" class="header-anchor">#</a> 함수</h2> <ul><li>문법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>def 함수이름(인자1, ...):
+    실행할 명령1
+    실행할 명령2
+    ...
+    return 결과
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>- return 여러 개하기
+- 여러개를 리턴할 경우 튜플로 묶어서 return 됨
+
+def add_mul(num1, num2):
+    return num1 + num2, num1 * num2
+
+my_add, my_mul = add_mul(1, 2)  # 3, 2
+</code></pre></div></blockquote> <h2 id="모듈"><a href="#모듈" aria-hidden="true" class="header-anchor">#</a> 모듈</h2> <ul><li>문법</li></ul> <blockquote><div class="language- extra-class"><pre class="language-text"><code>import 모듈이름
+</code></pre></div></blockquote></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/devstudyy/devstudy/edit/master/docs/jju/python.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/24/2019, 2:43:18 PM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/devstudy/assets/js/app.fccfb1f1.js" defer></script><script src="/devstudy/assets/js/9.c91781b1.js" defer></script>
+  </body>
+</html>
