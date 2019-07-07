@@ -54,7 +54,7 @@ module.exports = {
             {
                 text: '박현우',
                 link: '/rnmkr/'
-            },
+            }
         ],
         sidebar: {
             '/yukyung/': [
@@ -133,12 +133,9 @@ module.exports = {
             '/rnmkr/': [
                 {
                     title: 'DOCUMENT',
-                    collapsable: true,
-                    children: [
-                        'ElasticSearch'
-                    ]
+                    collapsable: true
                 }
-            ],
+            ]
         }
     },
 }
